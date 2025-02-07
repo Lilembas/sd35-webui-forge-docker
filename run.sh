@@ -18,7 +18,7 @@ if [ ! -d "/app/sd-webui" ] || [ ! "$(ls -A "/app/sd-webui")" ]; then
 
   if [ "$UI" = "forge-sd35" ]; then
     echo "Using Forge"
-    git clone -b sd35 https://github.com/lllyasviel/stable-diffusion-webui-forge.git /app/sd-webui
+    git clone -b sd35 --single-branch https://github.com/lllyasviel/stable-diffusion-webui-forge.git /app/sd-webui
     cd /app/sd-webui
   fi
 
